@@ -1,6 +1,7 @@
 '''
 This file contains useful helper functions for regression and classification models.
 '''
+
 # ===== Packages =====
 import numpy as np
 import matplotlib.pyplot as plt
@@ -8,7 +9,7 @@ import matplotlib.pyplot as plt
 # ===== Helper Functions ======
 def load_data(filename):
     '''
-    Processes the dataset into arrays.
+    Processes the dataset into arrays. Assumes all columns are used and targets/labels are the last column.
     
     Args:
         filename (str) : The dataset (.csv).
@@ -31,7 +32,7 @@ def load_data(filename):
 
 def load_data_housingPrices(filename, start_col):
     '''
-    Processes the dataset into arrays.
+    Processes the dataset into arrays. Works only for "Housing.csv".
     
     Args:
         filename (str)  : The dataset (.csv).
@@ -64,6 +65,7 @@ def sigmoid(z):
         g (ndarray) : An array containing the sigmoid(z) with the same size as z.
     '''
     
+    # Sigmoid formula
     return 1/(1+np.exp(-z))
 
 def feature_scaling(x):
