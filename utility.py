@@ -15,7 +15,7 @@ def load_data(filename):
         filename (str) : The dataset (.csv).
     Returns:
         categories (ndarray)    : An array containing the categories of the dataset.
-        x (ndarray Shape (m,n)) : An array containing the featuries of the dataset, excluding the last column.
+        x (ndarray Shape (m,n)) : An array containing the features of the dataset, excluding the last column.
         y (ndarray Shape (m,1)) : An array containing the labels of the dataset. 
     '''
     # Reads the first line to determine the number of columns
@@ -39,7 +39,7 @@ def load_data_housingPrices(filename, start_col):
         start_col (int) : Starting column for loading data.
     Returns:
         categories (ndarray)    : An array containing the categories of the dataset.
-        x (ndarray Shape (m,n)) : An array containing the featuries of the dataset, excluding the last column.
+        x (ndarray Shape (m,n)) : An array containing the features of the dataset, excluding the last column.
         y (ndarray Shape (m,1)) : An array containing the labels of the dataset. 
     '''
     
